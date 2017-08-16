@@ -5,12 +5,16 @@
 	<title>Movie Saving list</title>
 	<link rel="stylesheet" type="text/css" media="all" href="src/css/style.css">
 	<script type="text/javascript" src="src/js/jquery-1.9.1.min.js"></script>
-  <script type="text/javascript" src="src/js/jquery.autocomplete.min.js"></script>
+  	<script type="text/javascript" src="src/js/jquery.autocomplete.min.js"></script>
+  	<script type="text/javascript" src="src/js/moviedb-autocomplete.js"></script>
+  	<script type="text/javascript" src="https://platform.linkedin.com/badges/js/profile.js" async defer></script>
+ 	<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
 </head>
 <body>
 	<header>
-		<div id="topbar">
-			<nav>
+		<div class="wrap">
+		    <div class="content">
+			<nav id="navMain">
 				<ul>
 					<li><a href="#">Home</a></li>
 					<li><a href="#">Search Movie</a></li>
@@ -18,22 +22,57 @@
 				</ul>
 			</nav>
 		</div>	
+		</div>
 	</header>
 	<main>
-		<div id="wrap">
-		    <div id="content">
+		<div class="wrap">
+		    <div class="content">
 		    	<h1>Movie Saving List</h1>
 		    	<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Expedita minus quasi id, impedit, dicta laudantium culpa, assumenda dolores perferendis consectetur nemo voluptas incidunt, facere dolore saepe rerum. Rem, suscipit soluta.</p>
 
 				<div id="searchfield">
-					<form><input type="text" name="" class="biginput" id="autocomplete"></form>
+					<form><input type="text" name="movie" class="biginput" id="autocomplete"></form>
 				</div>
 
 				<div id="outputbox">
 					<p id="outputcontent">Choose a movie and the results will display here.</p>
 				</div>
+			</div>		
+		</div>
+	    <div class="wrap">
+		    <div class="content">
+		    	<h3>Pin list</h3>
+		    	<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugit, libero perferendis. Vero tenetur illo ab suscipit, omnis officiis! Blanditiis at voluptatibus, nesciunt nisi id perspiciatis eius, consequuntur architecto porro reprehenderit.</p>
 		    </div>
-	  </div>
+	    </div>
+	<div class="wrap">
+		<div class="content">
+			<div class="LI-profile-badge"  data-version="v1" data-size="large" data-locale="fr_FR" data-type="vertical" data-theme="dark" data-vanity="ruben-thiar"><a class="LI-simple-link" href='https://fr.linkedin.com/in/ruben-thiar?trk=profile-badge'>Ruben Thiar</a>
+			</div>
+		</div>
+	</div>   
+	<div class="wrap">
+		<div class="content">
+		<div class="footer-left">
+        <span class="footer-made-by">
+          Made with
+          <i class="fa fa-heart" aria-hidden="true"></i> by <a href="http://nessimthiar.com" target="_blank">Ruben Thiar</a>
+        </span>
+
+        © 2017
+      </div>
+		</div>
+	</div>
   </main>
 </body>
+<!--                                  
+		Made by rthiar.         
+
+		╔═══╗╔════╗╔╗ ╔╗╔══╗╔═══╗╔═══╗
+		║╔═╗║║╔╗╔╗║║║ ║║╚╗╔╝║╔═╗║║╔═╗║
+		║╚═╝║╚╝║║╚╝║╚═╝║ ║║ ║║ ║║║╚═╝║
+		║╔╗╔╝  ║║  ║╔═╗║ ║║ ║╚═╝║║╔╗╔╝
+		║║║╚╗  ║║  ║║ ║║╔╝╚╗║╔═╗║║║║╚╗
+		╚╝╚═╝  ╚╝  ╚╝ ╚╝╚══╝╚╝ ╚╝╚╝╚═╝                         
+-->
 </html>
