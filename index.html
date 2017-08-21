@@ -6,19 +6,22 @@
 	<link rel="stylesheet" type="text/css" media="all" href="src/css/style.css">
 	<script type="text/javascript" src="src/js/jquery-1.9.1.min.js"></script>
   	<script type="text/javascript" src="src/js/jquery.autocomplete.min.js"></script>
-  	
+  	<link rel="stylesheet" href="//ajax.googleapis.com/ajax/libs/jqueryui/1.10.3/themes/cupertino/jquery-ui.min.css" type="text/css">
   	<script type="text/javascript" src="https://platform.linkedin.com/badges/js/profile.js" async defer></script>
  	<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+ 	<script src="//ajax.googleapis.com/ajax/libs/jqueryui/1.10.3/jquery-ui.min.js"></script>
+ 	<script type="text/javascript" src="src/js/autocomplete.js" ></script>
 </head>
 <body>
+<div id="top"></div>
 	<header>
 		<div class="wrap">
 		    <div class="content">
 			<nav id="navMain">
 				<ul>
-					<li><a href="#">Home</a></li>
+					<li><a href="#top">Home</a></li>
 					<li><a href="#">Search Movie</a></li>
-					<li><a href="#">Contact</a></li>
+					<li><a href="#Contact">Contact</a></li>
 				</ul>
 			</nav>
 		</div>	
@@ -35,12 +38,12 @@
 		<div class="form-group">
 			<label class="control-label" id="searchLab">Rechercher un film : </label>
 
-			<input type="text" id="search"/>
+			<!-- <input type="text" id="search"/> -->
 		</div>
 
 
 
-
+<!-- 
 	
 	<div class="form-group">
 		<label>Du plus récent au plus ancien : </label>
@@ -58,18 +61,26 @@
 
 			<label class="control-label">sortir tous les films par participation au vote des internautes :</label>
 			<input type="radio" name="sort" id="checkPar"/>
-	</div>
+	</div> -->
 
 
 
+<div id="top">
+  <div id="form-wrap">
+    <form id="form" name="form" method="get" action="http://www.imdb.com/find">
+        
+        <span role="status" aria-live="polite" class="ui-helper-hidden-accessible">20 results are available, use up and down arrow keys to navigate.</span><input type="text" id="Films" placeholder="Search:" name="Films" size="50" class="ui-autocomplete-input" autocomplete="off"> <input readonly="readonly" id="Film_id" name="Film_id">
+    </form>     
+    </div>
+  </div>
+
+  <div id="response"></div>
+<!-- 	<button id="ok">Ok</button> -->
 
 
-	<button id="ok">Ok</button>
-
-
-	<h4 id='films'>Films :</h4>
-	<div id="listeHTML">
-	</div>
+	<!-- <h4 id='films'>Films :</h4>
+	<div id="listeHTML" style="width: 50%;">
+	</div> -->
 
 		</div>
 	    <div class="wrap">
@@ -80,7 +91,7 @@
 	    </div>
 	<div class="wrap">
 		<div class="content">
-			<div class="LI-profile-badge"  data-version="v1" data-size="large" data-locale="fr_FR" data-type="vertical" data-theme="dark" data-vanity="ruben-thiar"><a class="LI-simple-link" href='https://fr.linkedin.com/in/ruben-thiar?trk=profile-badge'>Ruben Thiar</a>
+			<div id="Contact" class="LI-profile-badge"  data-version="v1" data-size="large" data-locale="fr_FR" data-type="vertical" data-theme="dark" data-vanity="ruben-thiar"><a class="LI-simple-link" href='https://fr.linkedin.com/in/ruben-thiar?trk=profile-badge'>Ruben Thiar</a>
 			</div>
 		</div>
 	</div>   
@@ -100,18 +111,8 @@
 
 		<script type="text/javascript" src="src/js/moviedb-autocomplete.js"></script>		
 		<script type="text/javascript" src="src/js/ajax.js"></script>  
+		
 
 </body>
-<!--                                  
-		Made by rthiar.         
-
-		╔═══╗╔════╗╔╗ ╔╗╔══╗╔═══╗╔═══╗
-		║╔═╗║║╔╗╔╗║║║ ║║╚╗╔╝║╔═╗║║╔═╗║
-		║╚═╝║╚╝║║╚╝║╚═╝║ ║║ ║║ ║║║╚═╝║
-		║╔╗╔╝  ║║  ║╔═╗║ ║║ ║╚═╝║║╔╗╔╝
-		║║║╚╗  ║║  ║║ ║║╔╝╚╗║╔═╗║║║║╚╗
-		╚╝╚═╝  ╚╝  ╚╝ ╚╝╚══╝╚╝ ╚╝╚╝╚═╝                         
--->
-</html>
 
 </html>
