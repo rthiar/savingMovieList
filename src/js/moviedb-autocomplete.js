@@ -137,29 +137,6 @@ if (genreCheckVerify() && searchVal.length > 1) {
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
     for (var i=0; i < films.results.length; i++) {
 
 
@@ -237,7 +214,7 @@ function filmSearch() {
 var key = "?api_key=6d483dc6ba18c8450e5d7a0a597b9024",
     url = "https://api.themoviedb.org/3/",
     genre = "&with_genres=",
-    search = document.getElementById('search'),//                                   |
+    search = document.getElementById('search'),
     searchVal = search.value,
     query = "&query=";
 
