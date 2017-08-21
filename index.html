@@ -6,7 +6,7 @@
 	<link rel="stylesheet" type="text/css" media="all" href="src/css/style.css">
 	<script type="text/javascript" src="src/js/jquery-1.9.1.min.js"></script>
   	<script type="text/javascript" src="src/js/jquery.autocomplete.min.js"></script>
-  	<script type="text/javascript" src="src/js/moviedb-autocomplete.js"></script>
+  	
   	<script type="text/javascript" src="https://platform.linkedin.com/badges/js/profile.js" async defer></script>
  	<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
 </head>
@@ -30,14 +30,47 @@
 		    	<h1>Movie Saving List</h1>
 		    	<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Expedita minus quasi id, impedit, dicta laudantium culpa, assumenda dolores perferendis consectetur nemo voluptas incidunt, facere dolore saepe rerum. Rem, suscipit soluta.</p>
 
-				<div id="searchfield">
-					<form><input type="text" name="movie" class="biginput" id="autocomplete"></form>
-				</div>
+				
+	
+		<div class="form-group">
+			<label class="control-label" id="searchLab">Rechercher un film : </label>
 
-				<div id="outputbox">
-					<p id="outputcontent">Choose a movie and the results will display here.</p>
-				</div>
-			</div>		
+			<input type="text" id="search"/>
+		</div>
+
+
+
+
+	
+	<div class="form-group">
+		<label>Du plus récent au plus ancien : </label>
+		<input type="radio" name="sort" id="checkDateRec"/>
+
+		<label>Du plus ancien au plus récent : </label>
+		<input type="radio" name="sort" id="checkDateAnc"/>
+
+		<label class="control-label">sortir tous les films par popularité :</label>
+			<input type="radio" name="sort" id="checkPop"/>
+
+			<label class="control-label">sortir tous les films par vote des internautes :</label>
+			<input type="radio" name="sort" id="checkAve"/>
+
+
+			<label class="control-label">sortir tous les films par participation au vote des internautes :</label>
+			<input type="radio" name="sort" id="checkPar"/>
+	</div>
+
+
+
+
+
+	<button id="ok">Ok</button>
+
+
+	<h4 id='films'>Films :</h4>
+	<div id="listeHTML">
+	</div>
+
 		</div>
 	    <div class="wrap">
 		    <div class="content">
@@ -64,6 +97,10 @@
 		</div>
 	</div>
   </main>
+
+		<script type="text/javascript" src="src/js/moviedb-autocomplete.js"></script>		
+		<script type="text/javascript" src="src/js/ajax.js"></script>  
+
 </body>
 <!--                                  
 		Made by rthiar.         
@@ -75,4 +112,6 @@
 		║║║╚╗  ║║  ║║ ║║╔╝╚╗║╔═╗║║║║╚╗
 		╚╝╚═╝  ╚╝  ╚╝ ╚╝╚══╝╚╝ ╚╝╚╝╚═╝                         
 -->
+</html>
+
 </html>
